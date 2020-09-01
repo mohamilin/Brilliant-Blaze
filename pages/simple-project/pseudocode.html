@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amilin's WebDev</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+
+<body>
+    <nav class="indigo">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="simple.html">Simple Projects</a></li>
+            <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+            <!-- <li><a href="mobile.html">Contact</a></li> -->
+            <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav teal accent-1" id="mobile-demo">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="./simple.html">Simple Projects</a></li>
+        <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+        <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+        <!-- <li><a href="mobile.html">Mobile</a></li> -->
+      </ul>
+      </nav>
+
+  <div class="section">
+        <h1 class="center">SOLVE PSEUDOCODE</h1>
+        <div class="row">
+            <div class="col s12">
+                <xmp>
+                    #SOAL 1
+                    Buatlah Algoritma untuk menyelesaikan problem ini : 
+                        David memiliki program yang membutuhkan untuk convert data dari jumlah jam ke detik
+                        Contohnya jika program memiliki input 2 jam maka output yang diharapkan adalah 7200 detik
+                
+                    Solve :
+                    
+                    STORE "jam" with any number
+                    STORE "detik" without any number
+                    
+                    CALCULATE "jam" * 360
+                    SET "detik" value with calculation result
+                    DISPLAY "detik"
+                </xmp>
+            </div>
+            
+            <div class="col s12">
+                <xmp>
+                    #SOAL 2:
+                    Buatlah Algoritma untuk menyelesaikan problem ini
+                        Ridho ingin memiliki program untuk mengetahui hasil perbandingan dari 2 buah nilai yang tersedia.
+                        Program harus bisa menampilkan output nilai terbesar atau nilai yang sama jika kedua buah nilai memiliki nilai yang sama.
+                        Contohnya jika Ridho input nilai pertama 10 dan nilai kedua 20. Maka output program adalah: 20 nilai terbesar
+                        Jika Ridho input nilai pertama adalah 5 dan nilai kedua adalah 5. Maka output program adalah nilai pertama sama dengan nilai kedua
+        
+                    Solve :
+        
+                    STORE "number1" with any number
+                    STORE "number2" with any number 
+        
+                    IF "number1 > "number2 THEN
+                        DISPLAY "number1" is largest
+                    ELSE IF "number1 < "number2 THEN
+                        DISPLAY "number2" is largest
+                    ELSE 
+                        DISPLAY "number1" equal to "number2"
+                    ENDIF
+                </xmp>
+            </div>
+            
+            <div class="col s12">
+                <xmp>
+                    #SOAL 3: 
+                    Buatlah Algoritma untuk menyelesaikan problem ini
+                        Amanda ingin memiliki aplikasi yang dapat menghitung harga tiket pesawat yang harus dibayar oleh Traveler.
+                        Data yang akan diinput adalah
+                            Jumlah Traveler
+                            Harga Tiket Pesawat
+                            Cek apakah membeli tiket one way or two way
+                        Misalnya jumlah traveler 2 orang. Per tiketnya seharga Rp 600.000.
+                        Maka program akan memberikan nilai berupa harga yang harus dibayar sebesar Rp 1.200.000
+        
+                    Solve :
+        
+                    STORE "traveler" with any integer
+                    STORE "price" with any integer
+                    STORE "way-type" with "one-way" or "two way"
+                    STORE "one-way" equal to 1
+                    STORE "two-way" equal to 2
+                    STORE "total-price" without any integer
+        
+                    CALCULATE "traveler" times "price" times "way-type"
+                    SET "total-price" value with calculation result
+                    DISPLAY "total-price"
+                </xmp>
+            </div>
+            <div class="col s12">
+                <xmp>
+                    #SOAL 4:
+                    Buatlah Algoritma untuk menyelesaikan problem ini
+                        William ingin menampilkan deretan nilai dari 0 sampai N.
+                        N adalah nilai akhir yang diinputkan.
+                        Jika William menginput N dengan nilai 100, maka program akan menampilkan deretan nilai 1, 2, 3, 4, 5, … , 100
+        
+                    Solve :
+        
+                    STORE "i" with 0
+                    Strore "N" with any integer
+                    STORE "output" without any integer
+        
+                    WHILE "i" < "N"
+                        ADD "i" by 1
+                        INCREAMENT i
+                        IF "i" equals to "N" THEN
+                            SET "output" to ARRAY
+                            DISPLAY "output"
+                        ELSE 
+                            DISPLAY "data not commpatible"
+                        ENDIF
+                    ENDWHILE
+                </xmp>
+            </div>
+            <div class="col s12">
+                <xmp>
+                    #SOAL 5: 
+                     Buatlah Algoritma untuk menyelesaikan problem ini
+                     Sarah ingin membuat aplikasi yang bisa mendeteksi dari operasi yang dilakukan seperti dibawah ini:
+                         User menginputkan max nilai (n)
+                         Min nilai adalah 1
+                         Lakukan perulangan untuk cek kondisi berikut:
+                             Jika nilai dapat dibagi dengan 3, program akan menghasilkan output text “Fizz”
+                             Jika nilai dapat dibagi dengan 5, program akan menghasilkan output text “Buzz”
+             
+                     SOLVE
+                     
+                     STORE "number" with to 1
+                     STROE "N" with any integer
+                     STORE "data" without any integer
+                     
+                     WHILE "number" <= "N"
+                         DISPLAY "number"
+                         IF "number" mod 3 equals to 0 THEN
+                             DISPLAY "Fizz”
+                         ELSE IF "number" mod 5 equals to 0 THEN
+                             DISPLAY "Buzz”
+                         ELSE
+                             DISPLAY "data mod 3 or 5 not equals to 0"
+                         ENDIF
+                     ENDWHILE
+                </xmp>
+            </div>
+        </div>    
+  </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+      new Typed('#typed', {
+        strings: ['Web Developer', 'Teacher'],
+        typeSpeed: 170,
+        delaySpeed: 200,
+        loop: true
+      });
+    </script>
+</body>
+
+</html>

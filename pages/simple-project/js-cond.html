@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Cond | Amilin's WebDev</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+    <nav class="indigo">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="simple.html">Simple Projects</a></li>
+            <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+            <!-- <li><a href="mobile.html">Contact</a></li> -->
+            <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav teal accent-1" id="mobile-demo">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="./simple.html">Simple Projects</a></li>
+        <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+        <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+        <!-- <li><a href="mobile.html">Mobile</a></li> -->
+      </ul>
+      </nav>
+
+    <div class="section">
+        <div class="container">
+            <!-- start -->
+            <div class="row">
+                <div class="btn col s12">
+                    Aplikasi Sederhana Javascript (Condition)
+                </div>
+                <!-- num 1 -->
+                <div class="col s4">
+                    <div class="card red darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title"> Division APP</span>
+                            <p> Inputkan Posisi Anda untuk mengeahui jobdesk anda.</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verOne()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col s4">
+                    <div class="card blue darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Comparing Num APP</span>
+                            <p>
+                                Membandingkan dua angka lebih besar atau lebih kecil.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verTwo()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col s4">
+                    <div class="card yellow darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Days APP</span>
+                            <p>
+                                Nama hari berdasarkan angka. <br> <br>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verThree()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <!-- <div class="col s6">
+                    <div class="card blue darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">~~ INPUT DATA ver 2 ~~</span>
+                            <p>
+                                Silahkan klik CTA maka akan muncul form, silahkan masukkan data anda. (by confirmation)
+                                <br> <br>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verTwo()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end 1-4 -->
+            </div>
+            <!-- end card / row-->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row container">
+            <div class="grid-example teal accent-4 col s12">
+                <span class="flow-text">
+                    <p class="upper-text" id="verone"></p>
+                    <p class="upper-text" id="vertwo"></p>
+                    <p class="upper-text" id="verthree"></p>
+                    <p class="upper-text" id="verfour"></p>
+                </span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../../js/materialize.js"></script>
+    <script src="../../js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+        new Typed('#typed', {
+            strings: ['Web Developer', 'Teacher'],
+            typeSpeed: 170,
+            delaySpeed: 200,
+            loop: true
+        });
+
+        // untuk division APP
+        function verOne() {
+            let division = prompt("Apa Posisi Anda Sekarang ?");
+
+            dataFirst(division);
+            document.getElementById("verone").innerHTML = text;
+        }
+
+        function dataFirst(division) {
+            if (division == "HR") {
+                text = "Rekrutmen untuk calon pegawai baru";
+            } else if (division == "marketing") {
+                text = "Memasarkan Produk";
+            } else if (division == "Manager") {
+                text = "Mengatur Team";
+            } else if (division == "front-end") {
+                text = "Mengembangkan aplikasi";
+            } else if (division == "CEO") {
+                text = "Menerima Laoporan dari seluruh bagian"
+            } else {
+                text = "Daftar Posisi Anda belum ada. ";
+            }
+        }
+        // untuk Comparing Numbers
+        function verTwo() {
+            let numOne = Number(prompt(" Inputkan angka pertama !"));
+            let numTwo = Number(prompt(" Inputkan angka kedua"));
+
+            dataNumber(numOne, numTwo);
+            document.getElementById("vertwo").innerHTML = text;
+        }
+
+        function dataNumber(numOne, numTwo) {
+            if (numOne > numTwo) {
+                text = numOne + " lebih besar dari " + numTwo;
+            } else if (numOne === numTwo) {
+                text = numOne + " sama dengan " + numTwo;
+            } else if (numOne < numTwo) {
+                text = numOne + " lebih kecil dari " + numTwo;
+            } else {
+                text = "Anda Salah masukkan data";
+            }
+        }
+
+        // untuk Days App
+        function verThree() {
+            let day = String(prompt("Masukkan Nama Hari !"));
+
+            dataDay(day);
+            document.getElementById("verthree").innerHTML = text;
+        }
+
+        function dataDay(day) {
+            switch (day) {
+                case "Minggu":
+                    text = day + " dalam angka sama dengan " + "1";
+                    break;
+                case "Senin":
+                    text = day + " dalam angka sama dengan " +"2";
+                    break;
+                case "Selasa":
+                    text = day + " dalam angka sama dengan " +"3";
+                    break;
+                case "Sabu":
+                    text =  day + " dalam angka sama dengan " + "4";
+                    break;
+                case "Kamis":
+                    text =  day + " dalam angka sama dengan " + "5";
+                    break;
+                case "Jum'at":
+                    text =  day + " dalam angka sama dengan " + "6";
+                    break;
+                case "Sabtu":
+                    text =  day + " dalam angka sama dengan " + "7";
+                    break;
+                default:
+                    text ="data tidak sesuai. <br>  Nama hari yang benar : Minggu, Senin, Selasa, Rabu, Kamis, Jum'at, Sabtu";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

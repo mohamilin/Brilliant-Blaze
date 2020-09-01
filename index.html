@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amilin's WebDev</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+
+<body>
+  <nav class="indigo">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="pages/blog/blog.html">Blog</a></li>
+        <li><a href="pages/simple-project/simple.html">Simple Projects</a></li>
+        <li><a href="collapsible.html">Portofolio</a></li>
+        <!-- <li><a href="mobile.html">Contact</a></li> -->
+        <li><a href="pages/contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav teal accent-1" id="mobile-demo">
+    <li><a href="./pages/blog/blog.html">Blog</a></li>
+    <li><a href="./pages/simple-project/simple.html">Simple Projects</a></li>
+    <li><a href="collapsible.html">Portofolio</a></li>
+    <li><a href="mobile.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+    <!-- <li><a href="mobile.html">Mobile</a></li> -->
+  </ul>
+  </nav>
+
+  <div class="section">
+    <div class="row container">
+      <div class="grid-example col s3">
+        <!--  -->
+        <div class="row" id="row-name">
+          <img class="img-container" src="./assets/undraw_programming_2svr.svg" alt="" srcset="">
+          <h2>Moh Amilin</h2>
+          <div class="row">
+            <div class="col s4">
+              <a href="http://">
+                <img class="img-contact" src="./assets/github-logo.png" alt="" srcset="">
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://">
+                <img class="img-contact" src="./assets/instagram (2).png" alt="" srcset="">
+              </a>
+            </div>
+            <div class="col s4">
+              <a href="http://">
+                <img class="img-contact" src="./assets/linkedin (1).png" alt="" srcset="">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col s9">
+        <p class="text-profile  blue lighten-5">
+          Student program Full Stack Web Development di <a href="https://impactbyte.com/id/home">Impact Byte</a> 
+          <br>A LEARNER JAVASCRIPT, LARAVEL, REACT, NODE.JS, EXPRESS.JS, DART & DATABASE. <br> <br>
+        <em>Banyak hal menarik mengenai pemrograman terutama sebagai problem solving terhadap permasalahan dunia
+          nyata.</em>
+        </p>
+      </div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h5 class="header">cuap cuap... </h5>
+        <p class="grey-text text-darken-3">
+          hi, good people... banyaknya masalah adalah peluang untuk UPSKILL kelemahan dan kekurangan kita. Senantiasa
+          berproses dengan menikmati dalam rasa syukur. </p>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+      new Typed('#typed', {
+        strings: ['Web Developer', 'Teacher'],
+        typeSpeed: 170,
+        delaySpeed: 200,
+        loop: true
+      });
+    </script>
+</body>
+
+</html>

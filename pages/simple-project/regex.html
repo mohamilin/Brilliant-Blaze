@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression | Amilin's WebDev</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+    <nav class="indigo">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="simple.html">Simple Projects</a></li>
+            <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+            <!-- <li><a href="mobile.html">Contact</a></li> -->
+            <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav teal accent-1" id="mobile-demo">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="./simple.html">Simple Projects</a></li>
+        <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+        <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+        <!-- <li><a href="mobile.html">Mobile</a></li> -->
+      </ul>
+      </nav>
+
+    <div class="section">
+        <div class="container">
+            <!-- start -->
+            <div class="row">
+                <div class="btn col s12">
+                    Aplikasi sederhana dari Regular Expression
+                </div>
+                <!-- num 1 -->
+                <div class="col s4">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"> ~~ UPPERCASE ~~ </span>
+                            <p>Aplikasi ini akan mendeteksi huruf pertama yang anda masukkan
+                                berupa kapital atau bukan. <br> <br>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="upperCase()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col s4">
+                    <div class="card blue darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">~~ DIGIT CASE ~~</span>
+                            <p>
+                                Aplikasi sederhana ini akan menolak jika jumlah digit yang anda masukkan tidak diantara
+                                10-12 digit. <br> <br>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="digitCase()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col s4">
+                    <div class="card orange darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">~~ STRING CASE ~~</span>
+                            <p> Masukkan salah satu kalimat berikut : <br>
+                                Bagaimana cara memulai usaha bisnis,
+                                Bootcamp impact byte, Status covid hari ini
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="stringCase()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 1-3 -->
+            </div>
+            <!-- end card / row-->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row container">
+            <div class="grid-example teal accent-4 col s12">
+                <span class="flow-text">
+                    <p class="upper-text" id="upper"></p>
+                    <p class="upper-text" id="digit"></p>
+                    <p class="upper-text" id="string"></p>
+                </span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../../js/materialize.js"></script>
+    <script src="../../js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+        new Typed('#typed', {
+            strings: ['Web Developer', 'Teacher'],
+            typeSpeed: 170,
+            delaySpeed: 200,
+            loop: true
+        });
+
+        // untuk uppercase
+        function upperCase() {
+
+            let words = prompt("Masukkan Kata / Kalimat !");
+
+            upper_case(words);
+            document.getElementById("upper").innerHTML = text;
+        }
+
+        function upper_case(words) {
+            regexp = /^[A-Z]/;
+            if (regexp.test(words)) {
+                text = "Huruf pertama adalah huruf besar";
+            } else {
+                text = "Huruf pertama adalah huruf kecil";
+            }
+        }
+
+        // untuk digit case
+        function digitCase() {
+            let numbers = prompt("Masukkan Angka Anda !");
+
+            digit_case(numbers);
+            document.getElementById("digit").innerHTML = text;
+        }
+
+        function digit_case(numbers) {
+            regexp = /^\d{10,12}$/;
+            if (regexp.test(numbers)) {
+                text = "Yes... Jumlah digit sesuai kereteria";
+            } else {
+                text = "Harus number minimal 10 maksimal 12 digit";
+            }
+        }
+
+        //untuk string
+        function stringCase() {
+            let strings = prompt("Masukkan salah satu kalimat : Bagaimana cara memulai usaha bisnis, Bootcamp impact byte, Status covid hari ini");
+            string_case(strings);
+            document.getElementById("string").innerHTML = text;
+        }
+        function string_case(strings) {
+            regexp = /^Bagaimana cara memulai usaha bisnis$|^Bootcamp impact byte$|^Status covid hari ini$/;
+            if (regexp.test(strings)) {
+                text = "Yeah, Great !";
+            } else {
+                text = "try again !!!";
+            }
+        }
+
+        stringStrengh("Status covid hari ini");
+    </script>
+</body>
+
+</html>

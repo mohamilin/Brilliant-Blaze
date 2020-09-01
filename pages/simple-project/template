@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amilin's WebDev</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+
+<body>
+  <nav class="indigo">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../simple-project/simple.html">Simple Projects</a></li>
+        <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+        <!-- <li><a href="mobile.html">Contact</a></li> -->
+        <li><a class="waves-effect waves-light btn-large">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav teal accent-1" id="mobile-demo">
+    <li><a href="./pages/blog/blog.html">Blog</a></li>
+    <li><a href="./pages/simple-project/simple.html">Simple Projects</a></li>
+    <li><a href="collapsible.html">Portofolio</a></li>
+    <li><a href="mobile.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+    <!-- <li><a href="mobile.html">Mobile</a></li> -->
+  </ul>
+  </nav>
+
+  <div class="section">
+      <div class="container">
+
+      </div>
+      
+  </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+      new Typed('#typed', {
+        strings: ['Web Developer', 'Teacher'],
+        typeSpeed: 170,
+        delaySpeed: 200,
+        loop: true
+      });
+    </script>
+</body>
+
+</html>

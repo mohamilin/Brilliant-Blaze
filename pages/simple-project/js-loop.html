@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Loop | Amilin's WebDev</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+    <nav class="indigo">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo type">I'm a <span id="typed" class="typed"></span> </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="simple.html">Simple Projects</a></li>
+            <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+            <!-- <li><a href="mobile.html">Contact</a></li> -->
+            <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav teal accent-1" id="mobile-demo">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="./simple.html">Simple Projects</a></li>
+        <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
+        <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+        <!-- <li><a href="mobile.html">Mobile</a></li> -->
+      </ul>
+      </nav>
+
+    <div class="section">
+        <div class="container">
+            <!-- start -->
+            <div class="row">
+                <div class="btn col s12">
+                    Source Code & Aplikasi Javascript (Looping)
+                </div>
+                <!-- num 1 -->
+                <div class="col s4">
+                    <div class="card green darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title"> For Loop ver 1</span>
+                            <p> Menampilkan User sebanyak 100 Orang. <br> <br> </p>
+                        </div>
+                        <div class="card-action">
+                            <!-- <a class="btn waves-effect waves-light" onclick="verOne()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a> -->
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col s4">
+                    <div class="card lime darken-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">For Loop ver 2</span>
+                            <p>
+                                Nilai awal ditambah 2 setiap pengulangan sebanyak 10 kali. <br> <br>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <!-- <a class="btn waves-effect waves-light" onclick="verTwo()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a> -->
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col s4">
+                    <div class="card grey darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">For Loop Ver 3</span>
+                            <p>
+                                Pengulangan dengan pengecekan nilai ganjil atau genap dari 0 - 20
+
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <!-- <a class="btn waves-effect waves-light" onclick="verThree()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a> -->
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 2 -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <!-- 4 -->
+                <div class="col s6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Pop Up Confirm</span>
+                            <p>
+                                Konfirmasi Perulangan
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verOne()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col s6">
+                    <div class="card purple darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Impact B***</span>
+                            <p>
+                                Sebutkan Kepanjangan IB
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="btn waves-effect waves-light" onclick="verTwo()" href="#">CTA <i
+                                    class="material-icons right">send</i>
+                            </a>
+                            <a class="btn waves-effect pink darken-4 waves-light" href="#">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 1-5 -->
+            </div>
+            <!-- end card / row-->
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row container">
+            <div class="grid-example teal accent-4 col s12">
+                <span class="flow-text">
+                    <p class="upper-text" id="verone"></p>
+                    <p class="upper-text" id="vertwo"></p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../../js/materialize.js"></script>
+    <script src="../../js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+        new Typed('#typed', {
+            strings: ['Web Developer', 'Teacher'],
+            typeSpeed: 170,
+            delaySpeed: 200,
+            loop: true
+        });
+
+        // untuk Pop Up Confrim
+        function verOne() {
+            let repeat = confirm("Apakah anda mau mengulang?");
+            let count = 0;
+            while (repeat) {
+                let respond = confirm("Apakah anda mau mengulang?")
+                count++;
+                if (respond == false) {
+                    repeat = false;
+                }
+            }
+            text = "Perulangan sudah dilakuakn sebanyak " + count + " kali";
+            document.getElementById("verone").innerHTML = text;
+        }
+
+        // untuk Impact Byte
+        function verTwo() {
+            let bootcamp;
+            do {
+                bootcamp = prompt("Sebutkan kepanjangan dari nama IB ?");
+            } while (bootcamp != "Impact Byte");
+
+            text = "Selamat jawaban kamu benar";
+
+            document.getElementById("vertwo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
