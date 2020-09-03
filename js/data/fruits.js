@@ -26,7 +26,7 @@ let fruits = [
         latinName : "Saccharum sp",
         fruitColor: "Hijau",
         fruitBiji : "Monokotil",
-        fruitImage: "https://www.zonareferensi.com/wp-content/uploads/2018/11/contoh-tumbuhan-monokotil-tebu.jpg"
+        fruitImage: "https://ecs7.tokopedia.net/img/cache/700/product-1/2019/11/5/5566263/5566263_0f66ab08-3a89-49ee-80fb-46a631a9f852_500_500"
     },
     {
         fruitName : "Anggur",

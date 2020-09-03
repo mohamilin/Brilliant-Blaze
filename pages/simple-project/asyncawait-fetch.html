@@ -22,37 +22,50 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../blog/blog.html">Blog</a></li>
-        <li><a href="simple.html">Simple Projects</a></li>
+        <li><a href="../simple-project/simple.html">Simple Projects</a></li>
         <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
         <!-- <li><a href="mobile.html">Contact</a></li> -->
-        <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+        <li><a class="waves-effect waves-light btn-large">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav teal accent-1" id="mobile-demo">
-    <li><a href="../../index.html">Home</a></li>
-    <li><a href="../blog/blog.html">Blog</a></li>
-    <li><a href="./simple.html">Simple Projects</a></li>
-    <li><a href="../portofolio/portofolio.html">Portofolio</a></li>
-    <li><a href="../contact/contact.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
+    <li><a href="./pages/blog/blog.html">Blog</a></li>
+    <li><a href="./pages/simple-project/simple.html">Simple Projects</a></li>
+    <li><a href="collapsible.html">Portofolio</a></li>
+    <li><a href="mobile.html" class="waves-effect waves-light btn-large">Contact Us</a></li>
     <!-- <li><a href="mobile.html">Mobile</a></li> -->
   </ul>
   </nav>
 
   <div class="section">
-      <h1>Display Data Buah Menggunakan DOM</h1>
-      <div class="container">
-          <div class="row" id="list">
-          </div>
+    <div class="row container">
+      <div class="grid-example col s3">
+        <!--  -->
+        <div class="row" id="row-name">
+          <img class="avatar" id="avatar" src=' '>
+          <h2 id="name"></h2>
+          <p id="id"></p>
+        </div>
+
       </div>
+      <div class="col s9">
+        <div class="text-profile purple darken-1">
+          <p id="type2"></p>
+          <p id="type3"></p>
+          <p id="type4"></p>
+          <p id="type5"></p>
+          <p id="type6"></p>
+          <p id="type7"></p>
+        </div>
+      
+      </div>
+    </div>
   </div>
-
-
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script src="../../js/object.js"></script>
-
+    <script src="../../js/async.js"></script>
     <script>
       new Typed('#typed', {
         strings: ['Web Developer', 'Teacher'],
